@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Library" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-V0Q63QM;Initial Catalog=Library;Integrated Security=True" SettingsObjectName="Library.Properties.Settings" SettingsPropertyName="LibraryConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Member" Member="Members">
+    <Type Name="Member" Modifier="Sealed">
+      <Column Name="National_Code" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Certificate_Number" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="First_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Father_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Postal_Code" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Birth_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Phone_Number" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Book" Member="Books">
+    <Type Name="Book" Modifier="Sealed">
+      <Column Name="Code" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Author" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Translater" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Publisher" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Publish_Year" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SHABAK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Publish_Number" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Reserved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Deposited" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Serach_Book_Name" Method="Serach_Book_Name">
+    <Parameter Name="Item" Parameter="item" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="Serach_Book_NameResult">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Author" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Publisher" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Publish_Year" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Insert_Book" Method="Insert_Book">
+    <Parameter Name="Code" Parameter="code" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Author" Parameter="author" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Translater" Parameter="translater" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Publisher" Parameter="publisher" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Publish_Year" Parameter="publish_Year" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SHABAK" Parameter="sHABAK" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Publish_Number" Parameter="publish_Number" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Reserved" Parameter="reserved" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Deposited" Parameter="deposited" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
