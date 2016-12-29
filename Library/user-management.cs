@@ -191,5 +191,25 @@ namespace Library
                 txtPassword2.Text = "";
             }
         }
+        private void clear()
+        {
+            txtIDKodMeli.Text = "";
+            txtName.Text = "";
+            txtFamily.Text = "";
+            txtFathername.Text = "";
+            txtPostalcodeKodPosti.Text = "";
+            txtBirthdayTT.Text = "";
+            txtPhoneNumber.Text = "";
+            txtAddress.Text = "";
+            txtIDShomareOzviat.Text = "";
+            txtUserName.Text = "";
+            txtPassword.Text = "";
+            txtPassword2.Text = "";
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
     }
 }

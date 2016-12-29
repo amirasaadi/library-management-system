@@ -33,20 +33,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.مدیریتکاربرانToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.افزودنکاربرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.حذفکاربرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.بروزرسانیاطلاعاتکاربرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.لیستکاربرانToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.مدیریتکاربرانToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.تستسرچکتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.مدیریتاماناتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.امانتکتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تحویلکتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.لیستکتبامانتدادهشدهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.مدیریتکتابهاToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.افزودنکتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.حذفکتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ویرایشاطلاعاتکتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.مدیریتکتابهاToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.خروجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.راهنماینرمافزارToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,57 +80,17 @@
             // مدیریتکاربرانToolStripMenuItem
             // 
             this.مدیریتکاربرانToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.افزودنکاربرToolStripMenuItem,
-            this.حذفکاربرToolStripMenuItem,
-            this.بروزرسانیاطلاعاتکاربرToolStripMenuItem,
-            this.لیستکاربرانToolStripMenuItem,
-            this.مدیریتکاربرانToolStripMenuItem1,
-            this.تستسرچکتابToolStripMenuItem});
+            this.مدیریتکاربرانToolStripMenuItem1});
             this.مدیریتکاربرانToolStripMenuItem.Name = "مدیریتکاربرانToolStripMenuItem";
             this.مدیریتکاربرانToolStripMenuItem.Size = new System.Drawing.Size(93, 42);
             this.مدیریتکاربرانToolStripMenuItem.Text = "مدیریت کاربران";
             // 
-            // افزودنکاربرToolStripMenuItem
-            // 
-            this.افزودنکاربرToolStripMenuItem.Name = "افزودنکاربرToolStripMenuItem";
-            this.افزودنکاربرToolStripMenuItem.Size = new System.Drawing.Size(200, 28);
-            this.افزودنکاربرToolStripMenuItem.Text = "افزودن کاربر";
-            this.افزودنکاربرToolStripMenuItem.Click += new System.EventHandler(this.افزودنکاربرToolStripMenuItem_Click);
-            // 
-            // حذفکاربرToolStripMenuItem
-            // 
-            this.حذفکاربرToolStripMenuItem.Name = "حذفکاربرToolStripMenuItem";
-            this.حذفکاربرToolStripMenuItem.Size = new System.Drawing.Size(200, 28);
-            this.حذفکاربرToolStripMenuItem.Text = "حذف کاربر";
-            this.حذفکاربرToolStripMenuItem.Click += new System.EventHandler(this.حذفکاربرToolStripMenuItem_Click);
-            // 
-            // بروزرسانیاطلاعاتکاربرToolStripMenuItem
-            // 
-            this.بروزرسانیاطلاعاتکاربرToolStripMenuItem.Name = "بروزرسانیاطلاعاتکاربرToolStripMenuItem";
-            this.بروزرسانیاطلاعاتکاربرToolStripMenuItem.Size = new System.Drawing.Size(200, 28);
-            this.بروزرسانیاطلاعاتکاربرToolStripMenuItem.Text = "بروز رسانی اطلاعات کاربر";
-            this.بروزرسانیاطلاعاتکاربرToolStripMenuItem.Click += new System.EventHandler(this.بروزرسانیاطلاعاتکاربرToolStripMenuItem_Click);
-            // 
-            // لیستکاربرانToolStripMenuItem
-            // 
-            this.لیستکاربرانToolStripMenuItem.Name = "لیستکاربرانToolStripMenuItem";
-            this.لیستکاربرانToolStripMenuItem.Size = new System.Drawing.Size(200, 28);
-            this.لیستکاربرانToolStripMenuItem.Text = "لیست کاربران";
-            this.لیستکاربرانToolStripMenuItem.Click += new System.EventHandler(this.لیستکاربرانToolStripMenuItem_Click);
-            // 
             // مدیریتکاربرانToolStripMenuItem1
             // 
             this.مدیریتکاربرانToolStripMenuItem1.Name = "مدیریتکاربرانToolStripMenuItem1";
-            this.مدیریتکاربرانToolStripMenuItem1.Size = new System.Drawing.Size(200, 28);
+            this.مدیریتکاربرانToolStripMenuItem1.Size = new System.Drawing.Size(152, 28);
             this.مدیریتکاربرانToolStripMenuItem1.Text = "مدیریت کاربران";
             this.مدیریتکاربرانToolStripMenuItem1.Click += new System.EventHandler(this.مدیریتکاربرانToolStripMenuItem1_Click);
-            // 
-            // تستسرچکتابToolStripMenuItem
-            // 
-            this.تستسرچکتابToolStripMenuItem.Name = "تستسرچکتابToolStripMenuItem";
-            this.تستسرچکتابToolStripMenuItem.Size = new System.Drawing.Size(200, 28);
-            this.تستسرچکتابToolStripMenuItem.Text = "تست سرچ کتاب";
-            this.تستسرچکتابToolStripMenuItem.Click += new System.EventHandler(this.تستسرچکتابToolStripMenuItem_Click);
             // 
             // مدیریتاماناتToolStripMenuItem
             // 
@@ -171,39 +123,15 @@
             // مدیریتکتابهاToolStripMenuItem
             // 
             this.مدیریتکتابهاToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.افزودنکتابToolStripMenuItem,
-            this.حذفکتابToolStripMenuItem,
-            this.ویرایشاطلاعاتکتابToolStripMenuItem,
             this.مدیریتکتابهاToolStripMenuItem1});
             this.مدیریتکتابهاToolStripMenuItem.Name = "مدیریتکتابهاToolStripMenuItem";
             this.مدیریتکتابهاToolStripMenuItem.Size = new System.Drawing.Size(99, 42);
             this.مدیریتکتابهاToolStripMenuItem.Text = "مدیریت کتاب ها";
             // 
-            // افزودنکتابToolStripMenuItem
-            // 
-            this.افزودنکتابToolStripMenuItem.Name = "افزودنکتابToolStripMenuItem";
-            this.افزودنکتابToolStripMenuItem.Size = new System.Drawing.Size(183, 28);
-            this.افزودنکتابToolStripMenuItem.Text = "افزودن کتاب";
-            this.افزودنکتابToolStripMenuItem.Click += new System.EventHandler(this.افزودنکتابToolStripMenuItem_Click);
-            // 
-            // حذفکتابToolStripMenuItem
-            // 
-            this.حذفکتابToolStripMenuItem.Name = "حذفکتابToolStripMenuItem";
-            this.حذفکتابToolStripMenuItem.Size = new System.Drawing.Size(183, 28);
-            this.حذفکتابToolStripMenuItem.Text = "حذف کتاب";
-            this.حذفکتابToolStripMenuItem.Click += new System.EventHandler(this.حذفکتابToolStripMenuItem_Click);
-            // 
-            // ویرایشاطلاعاتکتابToolStripMenuItem
-            // 
-            this.ویرایشاطلاعاتکتابToolStripMenuItem.Name = "ویرایشاطلاعاتکتابToolStripMenuItem";
-            this.ویرایشاطلاعاتکتابToolStripMenuItem.Size = new System.Drawing.Size(183, 28);
-            this.ویرایشاطلاعاتکتابToolStripMenuItem.Text = "ویرایش اطلاعات کتاب";
-            this.ویرایشاطلاعاتکتابToolStripMenuItem.Click += new System.EventHandler(this.ویرایشاطلاعاتکتابToolStripMenuItem_Click);
-            // 
             // مدیریتکتابهاToolStripMenuItem1
             // 
             this.مدیریتکتابهاToolStripMenuItem1.Name = "مدیریتکتابهاToolStripMenuItem1";
-            this.مدیریتکتابهاToolStripMenuItem1.Size = new System.Drawing.Size(183, 28);
+            this.مدیریتکتابهاToolStripMenuItem1.Size = new System.Drawing.Size(157, 28);
             this.مدیریتکتابهاToolStripMenuItem1.Text = "مدیریت کتاب ها";
             this.مدیریتکتابهاToolStripMenuItem1.Click += new System.EventHandler(this.مدیریتکتابهاToolStripMenuItem1_Click);
             // 
@@ -387,18 +315,11 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem مدیریتکاربرانToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem افزودنکاربرToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem حذفکاربرToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem بروزرسانیاطلاعاتکاربرToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem لیستکاربرانToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem مدیریتاماناتToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem امانتکتابToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem تحویلکتابToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem لیستکتبامانتدادهشدهToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem مدیریتکتابهاToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem افزودنکتابToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem حذفکتابToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ویرایشاطلاعاتکتابToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -414,7 +335,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem مدیریتکاربرانToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem تستسرچکتابToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem مدیریتکتابهاToolStripMenuItem1;
     }
 }

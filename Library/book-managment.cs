@@ -35,6 +35,10 @@ namespace Library
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if()
+            {
+
+            }
             if (txtBookcode.Text == "" || txtBookname.Text == "" || txtbookauthor.Text == "" || txtpublisher.Text == "" || txtyear.Text == "" || txtPublish_Number.Text == "" || txtPublish_Number.Text == "")
             {
                 MessageBox.Show("لطفا فیلد های ستاره دار را پر نمایید ");
@@ -85,7 +89,7 @@ namespace Library
             SqlCommand sqlcmd = new SqlCommand();
             sqlcmd.Connection = sqlcon;
             sqlcmd.CommandType = CommandType.StoredProcedure;
-            
+
 
         }
         private void book_managment_Load(object sender, EventArgs e)
@@ -188,6 +192,23 @@ namespace Library
         {
 
         }
+        private void clear()
+        {
+            txtbookauthor.Text = "";
+            txtbookcategory.Text = "";
+            txtBookcode.Text = "";
+            txtBookname.Text = "";
+            txtbooktitle.Text = "";
+            txtbooktranslater.Text = "";
+            txtpublisher.Text = "";
+            txtPublish_Number.Text = "";
+            txtshabak.Text = "";
+            txtyear.Text = "";
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
     }
-    }
+}
 

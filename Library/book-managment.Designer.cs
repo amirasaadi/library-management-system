@@ -59,6 +59,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.updatebook = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +68,8 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 11);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(684, 434);
+            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dataGridView1.Size = new System.Drawing.Size(684, 496);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -76,7 +78,7 @@
             this.lnum.AutoSize = true;
             this.lnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lnum.ForeColor = System.Drawing.Color.Red;
-            this.lnum.Location = new System.Drawing.Point(713, 308);
+            this.lnum.Location = new System.Drawing.Point(710, 342);
             this.lnum.Name = "lnum";
             this.lnum.Size = new System.Drawing.Size(15, 20);
             this.lnum.TabIndex = 29;
@@ -87,7 +89,7 @@
             this.lsha.AutoSize = true;
             this.lsha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lsha.ForeColor = System.Drawing.Color.Red;
-            this.lsha.Location = new System.Drawing.Point(713, 242);
+            this.lsha.Location = new System.Drawing.Point(710, 276);
             this.lsha.Name = "lsha";
             this.lsha.Size = new System.Drawing.Size(15, 20);
             this.lsha.TabIndex = 36;
@@ -98,7 +100,7 @@
             this.lsal.AutoSize = true;
             this.lsal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lsal.ForeColor = System.Drawing.Color.Red;
-            this.lsal.Location = new System.Drawing.Point(713, 209);
+            this.lsal.Location = new System.Drawing.Point(710, 243);
             this.lsal.Name = "lsal";
             this.lsal.Size = new System.Drawing.Size(15, 20);
             this.lsal.TabIndex = 35;
@@ -109,7 +111,7 @@
             this.lpubli.AutoSize = true;
             this.lpubli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lpubli.ForeColor = System.Drawing.Color.Red;
-            this.lpubli.Location = new System.Drawing.Point(713, 176);
+            this.lpubli.Location = new System.Drawing.Point(710, 210);
             this.lpubli.Name = "lpubli";
             this.lpubli.Size = new System.Drawing.Size(15, 20);
             this.lpubli.TabIndex = 34;
@@ -120,7 +122,7 @@
             this.lath.AutoSize = true;
             this.lath.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lath.ForeColor = System.Drawing.Color.Red;
-            this.lath.Location = new System.Drawing.Point(713, 77);
+            this.lath.Location = new System.Drawing.Point(710, 111);
             this.lath.Name = "lath";
             this.lath.Size = new System.Drawing.Size(15, 20);
             this.lath.TabIndex = 33;
@@ -131,7 +133,7 @@
             this.lnam.AutoSize = true;
             this.lnam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lnam.ForeColor = System.Drawing.Color.Red;
-            this.lnam.Location = new System.Drawing.Point(713, 44);
+            this.lnam.Location = new System.Drawing.Point(710, 78);
             this.lnam.Name = "lnam";
             this.lnam.Size = new System.Drawing.Size(15, 20);
             this.lnam.TabIndex = 32;
@@ -142,7 +144,7 @@
             this.lkod.AutoSize = true;
             this.lkod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lkod.ForeColor = System.Drawing.Color.Red;
-            this.lkod.Location = new System.Drawing.Point(713, 11);
+            this.lkod.Location = new System.Drawing.Point(710, 45);
             this.lkod.Name = "lkod";
             this.lkod.Size = new System.Drawing.Size(15, 20);
             this.lkod.TabIndex = 31;
@@ -151,7 +153,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("IRNazanin", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(748, 346);
+            this.btnAdd.Location = new System.Drawing.Point(827, 424);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnAdd.Size = new System.Drawing.Size(100, 31);
@@ -162,99 +164,99 @@
             // 
             // txtshabak
             // 
-            this.txtshabak.Font = new System.Drawing.Font("IRNazanin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtshabak.Location = new System.Drawing.Point(748, 239);
+            this.txtshabak.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtshabak.Location = new System.Drawing.Point(745, 273);
             this.txtshabak.Name = "txtshabak";
             this.txtshabak.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtshabak.Size = new System.Drawing.Size(100, 24);
+            this.txtshabak.Size = new System.Drawing.Size(100, 31);
             this.txtshabak.TabIndex = 30;
             // 
             // txtbooktitle
             // 
-            this.txtbooktitle.Font = new System.Drawing.Font("IRNazanin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbooktitle.Location = new System.Drawing.Point(748, 107);
+            this.txtbooktitle.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbooktitle.Location = new System.Drawing.Point(745, 141);
             this.txtbooktitle.Name = "txtbooktitle";
             this.txtbooktitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtbooktitle.Size = new System.Drawing.Size(100, 24);
+            this.txtbooktitle.Size = new System.Drawing.Size(100, 31);
             this.txtbooktitle.TabIndex = 25;
             // 
             // txtbookcategory
             // 
-            this.txtbookcategory.Font = new System.Drawing.Font("IRNazanin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbookcategory.Location = new System.Drawing.Point(748, 272);
+            this.txtbookcategory.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbookcategory.Location = new System.Drawing.Point(745, 306);
             this.txtbookcategory.Name = "txtbookcategory";
             this.txtbookcategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtbookcategory.Size = new System.Drawing.Size(100, 24);
+            this.txtbookcategory.Size = new System.Drawing.Size(100, 31);
             this.txtbookcategory.TabIndex = 37;
             // 
             // txtpublisher
             // 
-            this.txtpublisher.Font = new System.Drawing.Font("IRNazanin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpublisher.Location = new System.Drawing.Point(748, 173);
+            this.txtpublisher.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpublisher.Location = new System.Drawing.Point(745, 207);
             this.txtpublisher.Name = "txtpublisher";
             this.txtpublisher.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtpublisher.Size = new System.Drawing.Size(100, 24);
+            this.txtpublisher.Size = new System.Drawing.Size(100, 31);
             this.txtpublisher.TabIndex = 27;
             // 
             // txtBookname
             // 
-            this.txtBookname.Font = new System.Drawing.Font("IRNazanin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookname.Location = new System.Drawing.Point(748, 41);
+            this.txtBookname.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBookname.Location = new System.Drawing.Point(745, 75);
             this.txtBookname.Name = "txtBookname";
             this.txtBookname.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtBookname.Size = new System.Drawing.Size(100, 24);
+            this.txtBookname.Size = new System.Drawing.Size(100, 31);
             this.txtBookname.TabIndex = 23;
             // 
             // txtPublish_Number
             // 
-            this.txtPublish_Number.Font = new System.Drawing.Font("IRNazanin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPublish_Number.Location = new System.Drawing.Point(748, 305);
+            this.txtPublish_Number.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPublish_Number.Location = new System.Drawing.Point(745, 339);
             this.txtPublish_Number.Name = "txtPublish_Number";
             this.txtPublish_Number.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtPublish_Number.Size = new System.Drawing.Size(100, 24);
+            this.txtPublish_Number.Size = new System.Drawing.Size(100, 31);
             this.txtPublish_Number.TabIndex = 38;
             // 
             // txtyear
             // 
-            this.txtyear.Font = new System.Drawing.Font("IRNazanin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtyear.Location = new System.Drawing.Point(748, 206);
+            this.txtyear.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtyear.Location = new System.Drawing.Point(745, 240);
             this.txtyear.Name = "txtyear";
             this.txtyear.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtyear.Size = new System.Drawing.Size(100, 24);
+            this.txtyear.Size = new System.Drawing.Size(100, 31);
             this.txtyear.TabIndex = 28;
             // 
             // txtbookauthor
             // 
-            this.txtbookauthor.Font = new System.Drawing.Font("IRNazanin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbookauthor.Location = new System.Drawing.Point(748, 74);
+            this.txtbookauthor.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbookauthor.Location = new System.Drawing.Point(745, 108);
             this.txtbookauthor.Name = "txtbookauthor";
             this.txtbookauthor.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtbookauthor.Size = new System.Drawing.Size(100, 24);
+            this.txtbookauthor.Size = new System.Drawing.Size(100, 31);
             this.txtbookauthor.TabIndex = 24;
             // 
             // txtbooktranslater
             // 
-            this.txtbooktranslater.Font = new System.Drawing.Font("IRNazanin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbooktranslater.Location = new System.Drawing.Point(748, 140);
+            this.txtbooktranslater.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbooktranslater.Location = new System.Drawing.Point(745, 174);
             this.txtbooktranslater.Name = "txtbooktranslater";
             this.txtbooktranslater.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtbooktranslater.Size = new System.Drawing.Size(100, 24);
+            this.txtbooktranslater.Size = new System.Drawing.Size(100, 31);
             this.txtbooktranslater.TabIndex = 26;
             // 
             // txtBookcode
             // 
-            this.txtBookcode.Font = new System.Drawing.Font("IRNazanin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookcode.Location = new System.Drawing.Point(748, 8);
+            this.txtBookcode.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBookcode.Location = new System.Drawing.Point(745, 42);
             this.txtBookcode.Name = "txtBookcode";
             this.txtBookcode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtBookcode.Size = new System.Drawing.Size(100, 24);
+            this.txtBookcode.Size = new System.Drawing.Size(100, 31);
             this.txtBookcode.TabIndex = 21;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(880, 242);
+            this.label8.Location = new System.Drawing.Point(877, 276);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label8.Size = new System.Drawing.Size(42, 25);
@@ -266,7 +268,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(862, 308);
+            this.label10.Location = new System.Drawing.Point(859, 342);
             this.label10.Name = "label10";
             this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label10.Size = new System.Drawing.Size(64, 25);
@@ -277,7 +279,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(859, 209);
+            this.label7.Location = new System.Drawing.Point(856, 243);
             this.label7.Name = "label7";
             this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label7.Size = new System.Drawing.Size(67, 25);
@@ -288,7 +290,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(879, 107);
+            this.label4.Location = new System.Drawing.Point(876, 141);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label4.Size = new System.Drawing.Size(41, 25);
@@ -299,7 +301,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(874, 272);
+            this.label9.Location = new System.Drawing.Point(871, 306);
             this.label9.Name = "label9";
             this.label9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label9.Size = new System.Drawing.Size(48, 25);
@@ -310,7 +312,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(869, 176);
+            this.label6.Location = new System.Drawing.Point(866, 210);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label6.Size = new System.Drawing.Size(55, 25);
@@ -321,7 +323,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(872, 73);
+            this.label3.Location = new System.Drawing.Point(869, 107);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label3.Size = new System.Drawing.Size(52, 25);
@@ -332,7 +334,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(877, 140);
+            this.label5.Location = new System.Drawing.Point(874, 174);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label5.Size = new System.Drawing.Size(46, 25);
@@ -343,7 +345,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(872, 44);
+            this.label2.Location = new System.Drawing.Point(869, 78);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label2.Size = new System.Drawing.Size(54, 25);
@@ -353,9 +355,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(874, 11);
+            this.label1.Location = new System.Drawing.Point(871, 45);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(53, 25);
@@ -365,7 +367,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("IRNazanin", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(748, 395);
+            this.button1.Location = new System.Drawing.Point(827, 461);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button1.Size = new System.Drawing.Size(100, 30);
@@ -377,7 +379,7 @@
             // updatebook
             // 
             this.updatebook.Font = new System.Drawing.Font("IRNazanin", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatebook.Location = new System.Drawing.Point(748, 445);
+            this.updatebook.Location = new System.Drawing.Point(717, 423);
             this.updatebook.Name = "updatebook";
             this.updatebook.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.updatebook.Size = new System.Drawing.Size(100, 31);
@@ -386,12 +388,25 @@
             this.updatebook.UseVisualStyleBackColor = true;
             this.updatebook.Click += new System.EventHandler(this.updatebook_Click);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("IRNazanin", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(717, 460);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button2.Size = new System.Drawing.Size(100, 31);
+            this.button2.TabIndex = 41;
+            this.button2.Text = "پاک کردن";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // book_managment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(939, 488);
+            this.ClientSize = new System.Drawing.Size(939, 519);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.updatebook);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lnum);
@@ -424,7 +439,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "book_managment";
-            this.Text = "book_managment";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "مدیریت کتاب ها";
             this.Load += new System.EventHandler(this.book_managment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -465,5 +482,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button updatebook;
+        private System.Windows.Forms.Button button2;
     }
 }
