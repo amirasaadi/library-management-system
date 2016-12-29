@@ -12,7 +12,7 @@ namespace Library
 {
     public partial class addMember : Form
     {
-        SqlConnection sqlcon = new SqlConnection("Data Source=DESKTOP-V0Q63QM;Initial Catalog=Library;Integrated Security=True");
+        SqlConnection sqlcon = new SqlConnection("Data Source=DESKTOP-9UL50MI;Initial Catalog=Library;Integrated Security=True");
         public addMember()
         {
             InitializeComponent();
@@ -53,10 +53,6 @@ namespace Library
         {
             if(txtPass.Text==txtPass2.Text)
             {
-                ///
-                
-
-                ///
                 SqlCommand sqlcmd = new SqlCommand();
                 sqlcmd.Connection = sqlcon;
                 sqlcmd.CommandType = CommandType.StoredProcedure;

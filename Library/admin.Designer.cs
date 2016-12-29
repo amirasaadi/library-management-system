@@ -37,6 +37,8 @@
             this.حذفکاربرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.بروزرسانیاطلاعاتکاربرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.لیستکاربرانToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.مدیریتکاربرانToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.تستسرچکتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.مدیریتاماناتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.امانتکتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تحویلکتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,6 +47,7 @@
             this.افزودنکتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.حذفکتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ویرایشاطلاعاتکتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.مدیریتکتابهاToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.خروجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.راهنماینرمافزارToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.دربارهماToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,7 +71,7 @@
             // 
             this.menuStrip1.AutoSize = false;
             this.menuStrip1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.menuStrip1.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.menuStrip1.Font = new System.Drawing.Font("IRNazanin", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.مدیریتکاربرانToolStripMenuItem,
             this.مدیریتاماناتToolStripMenuItem,
@@ -78,7 +81,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip1.Size = new System.Drawing.Size(1362, 46);
+            this.menuStrip1.Size = new System.Drawing.Size(1354, 46);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -88,38 +91,54 @@
             this.افزودنکاربرToolStripMenuItem,
             this.حذفکاربرToolStripMenuItem,
             this.بروزرسانیاطلاعاتکاربرToolStripMenuItem,
-            this.لیستکاربرانToolStripMenuItem});
+            this.لیستکاربرانToolStripMenuItem,
+            this.مدیریتکاربرانToolStripMenuItem1,
+            this.تستسرچکتابToolStripMenuItem});
             this.مدیریتکاربرانToolStripMenuItem.Name = "مدیریتکاربرانToolStripMenuItem";
-            this.مدیریتکاربرانToolStripMenuItem.Size = new System.Drawing.Size(94, 42);
+            this.مدیریتکاربرانToolStripMenuItem.Size = new System.Drawing.Size(93, 42);
             this.مدیریتکاربرانToolStripMenuItem.Text = "مدیریت کاربران";
             // 
             // افزودنکاربرToolStripMenuItem
             // 
             this.افزودنکاربرToolStripMenuItem.Name = "افزودنکاربرToolStripMenuItem";
-            this.افزودنکاربرToolStripMenuItem.Size = new System.Drawing.Size(198, 28);
+            this.افزودنکاربرToolStripMenuItem.Size = new System.Drawing.Size(200, 28);
             this.افزودنکاربرToolStripMenuItem.Text = "افزودن کاربر";
             this.افزودنکاربرToolStripMenuItem.Click += new System.EventHandler(this.افزودنکاربرToolStripMenuItem_Click);
             // 
             // حذفکاربرToolStripMenuItem
             // 
             this.حذفکاربرToolStripMenuItem.Name = "حذفکاربرToolStripMenuItem";
-            this.حذفکاربرToolStripMenuItem.Size = new System.Drawing.Size(198, 28);
+            this.حذفکاربرToolStripMenuItem.Size = new System.Drawing.Size(200, 28);
             this.حذفکاربرToolStripMenuItem.Text = "حذف کاربر";
             this.حذفکاربرToolStripMenuItem.Click += new System.EventHandler(this.حذفکاربرToolStripMenuItem_Click);
             // 
             // بروزرسانیاطلاعاتکاربرToolStripMenuItem
             // 
             this.بروزرسانیاطلاعاتکاربرToolStripMenuItem.Name = "بروزرسانیاطلاعاتکاربرToolStripMenuItem";
-            this.بروزرسانیاطلاعاتکاربرToolStripMenuItem.Size = new System.Drawing.Size(198, 28);
+            this.بروزرسانیاطلاعاتکاربرToolStripMenuItem.Size = new System.Drawing.Size(200, 28);
             this.بروزرسانیاطلاعاتکاربرToolStripMenuItem.Text = "بروز رسانی اطلاعات کاربر";
             this.بروزرسانیاطلاعاتکاربرToolStripMenuItem.Click += new System.EventHandler(this.بروزرسانیاطلاعاتکاربرToolStripMenuItem_Click);
             // 
             // لیستکاربرانToolStripMenuItem
             // 
             this.لیستکاربرانToolStripMenuItem.Name = "لیستکاربرانToolStripMenuItem";
-            this.لیستکاربرانToolStripMenuItem.Size = new System.Drawing.Size(198, 28);
+            this.لیستکاربرانToolStripMenuItem.Size = new System.Drawing.Size(200, 28);
             this.لیستکاربرانToolStripMenuItem.Text = "لیست کاربران";
             this.لیستکاربرانToolStripMenuItem.Click += new System.EventHandler(this.لیستکاربرانToolStripMenuItem_Click);
+            // 
+            // مدیریتکاربرانToolStripMenuItem1
+            // 
+            this.مدیریتکاربرانToolStripMenuItem1.Name = "مدیریتکاربرانToolStripMenuItem1";
+            this.مدیریتکاربرانToolStripMenuItem1.Size = new System.Drawing.Size(200, 28);
+            this.مدیریتکاربرانToolStripMenuItem1.Text = "مدیریت کاربران";
+            this.مدیریتکاربرانToolStripMenuItem1.Click += new System.EventHandler(this.مدیریتکاربرانToolStripMenuItem1_Click);
+            // 
+            // تستسرچکتابToolStripMenuItem
+            // 
+            this.تستسرچکتابToolStripMenuItem.Name = "تستسرچکتابToolStripMenuItem";
+            this.تستسرچکتابToolStripMenuItem.Size = new System.Drawing.Size(200, 28);
+            this.تستسرچکتابToolStripMenuItem.Text = "تست سرچ کتاب";
+            this.تستسرچکتابToolStripMenuItem.Click += new System.EventHandler(this.تستسرچکتابToolStripMenuItem_Click);
             // 
             // مدیریتاماناتToolStripMenuItem
             // 
@@ -134,19 +153,19 @@
             // امانتکتابToolStripMenuItem
             // 
             this.امانتکتابToolStripMenuItem.Name = "امانتکتابToolStripMenuItem";
-            this.امانتکتابToolStripMenuItem.Size = new System.Drawing.Size(208, 28);
+            this.امانتکتابToolStripMenuItem.Size = new System.Drawing.Size(211, 28);
             this.امانتکتابToolStripMenuItem.Text = "امانت کتاب";
             // 
             // تحویلکتابToolStripMenuItem
             // 
             this.تحویلکتابToolStripMenuItem.Name = "تحویلکتابToolStripMenuItem";
-            this.تحویلکتابToolStripMenuItem.Size = new System.Drawing.Size(208, 28);
+            this.تحویلکتابToolStripMenuItem.Size = new System.Drawing.Size(211, 28);
             this.تحویلکتابToolStripMenuItem.Text = "تحویل کتاب";
             // 
             // لیستکتبامانتدادهشدهToolStripMenuItem
             // 
             this.لیستکتبامانتدادهشدهToolStripMenuItem.Name = "لیستکتبامانتدادهشدهToolStripMenuItem";
-            this.لیستکتبامانتدادهشدهToolStripMenuItem.Size = new System.Drawing.Size(208, 28);
+            this.لیستکتبامانتدادهشدهToolStripMenuItem.Size = new System.Drawing.Size(211, 28);
             this.لیستکتبامانتدادهشدهToolStripMenuItem.Text = "لیست کتب امانت داده شده";
             // 
             // مدیریتکتابهاToolStripMenuItem
@@ -154,9 +173,10 @@
             this.مدیریتکتابهاToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.افزودنکتابToolStripMenuItem,
             this.حذفکتابToolStripMenuItem,
-            this.ویرایشاطلاعاتکتابToolStripMenuItem});
+            this.ویرایشاطلاعاتکتابToolStripMenuItem,
+            this.مدیریتکتابهاToolStripMenuItem1});
             this.مدیریتکتابهاToolStripMenuItem.Name = "مدیریتکتابهاToolStripMenuItem";
-            this.مدیریتکتابهاToolStripMenuItem.Size = new System.Drawing.Size(100, 42);
+            this.مدیریتکتابهاToolStripMenuItem.Size = new System.Drawing.Size(99, 42);
             this.مدیریتکتابهاToolStripMenuItem.Text = "مدیریت کتاب ها";
             // 
             // افزودنکتابToolStripMenuItem
@@ -180,26 +200,33 @@
             this.ویرایشاطلاعاتکتابToolStripMenuItem.Text = "ویرایش اطلاعات کتاب";
             this.ویرایشاطلاعاتکتابToolStripMenuItem.Click += new System.EventHandler(this.ویرایشاطلاعاتکتابToolStripMenuItem_Click);
             // 
+            // مدیریتکتابهاToolStripMenuItem1
+            // 
+            this.مدیریتکتابهاToolStripMenuItem1.Name = "مدیریتکتابهاToolStripMenuItem1";
+            this.مدیریتکتابهاToolStripMenuItem1.Size = new System.Drawing.Size(183, 28);
+            this.مدیریتکتابهاToolStripMenuItem1.Text = "مدیریت کتاب ها";
+            this.مدیریتکتابهاToolStripMenuItem1.Click += new System.EventHandler(this.مدیریتکتابهاToolStripMenuItem1_Click);
+            // 
             // خروجToolStripMenuItem
             // 
             this.خروجToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.راهنماینرمافزارToolStripMenuItem,
             this.دربارهماToolStripMenuItem});
             this.خروجToolStripMenuItem.Name = "خروجToolStripMenuItem";
-            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(51, 42);
+            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(52, 42);
             this.خروجToolStripMenuItem.Text = "راهنما";
             this.خروجToolStripMenuItem.Click += new System.EventHandler(this.خروجToolStripMenuItem_Click);
             // 
             // راهنماینرمافزارToolStripMenuItem
             // 
             this.راهنماینرمافزارToolStripMenuItem.Name = "راهنماینرمافزارToolStripMenuItem";
-            this.راهنماینرمافزارToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.راهنماینرمافزارToolStripMenuItem.Size = new System.Drawing.Size(159, 28);
             this.راهنماینرمافزارToolStripMenuItem.Text = "راهنمای نرم افزار";
             // 
             // دربارهماToolStripMenuItem
             // 
             this.دربارهماToolStripMenuItem.Name = "دربارهماToolStripMenuItem";
-            this.دربارهماToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
+            this.دربارهماToolStripMenuItem.Size = new System.Drawing.Size(159, 28);
             this.دربارهماToolStripMenuItem.Text = "درباره ما";
             // 
             // خروجToolStripMenuItem1
@@ -219,7 +246,7 @@
             this.groupBox1.Controls.Add(this.txtSearch);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.groupBox1.Location = new System.Drawing.Point(12, 49);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -232,7 +259,8 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(563, 54);
+            this.button1.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.button1.Location = new System.Drawing.Point(563, 49);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 31);
             this.button1.TabIndex = 7;
@@ -252,11 +280,13 @@
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Size = new System.Drawing.Size(1239, 581);
             this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnSearch
             // 
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Location = new System.Drawing.Point(668, 54);
+            this.btnSearch.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnSearch.Location = new System.Drawing.Point(668, 49);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(112, 31);
             this.btnSearch.TabIndex = 5;
@@ -267,14 +297,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.Location = new System.Drawing.Point(1083, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 24);
+            this.label3.Size = new System.Drawing.Size(75, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "متن جستجو";
             // 
             // txtSearch
             // 
+            this.txtSearch.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtSearch.Location = new System.Drawing.Point(786, 54);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(364, 31);
@@ -283,15 +315,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.Location = new System.Drawing.Point(1245, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 24);
+            this.label2.Size = new System.Drawing.Size(84, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "اساس جستجو";
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "نویسنده",
@@ -302,7 +336,7 @@
             "مترجم"});
             this.comboBox1.Location = new System.Drawing.Point(1158, 54);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(162, 32);
+            this.comboBox1.Size = new System.Drawing.Size(162, 33);
             this.comboBox1.TabIndex = 1;
             // 
             // timer1
@@ -314,7 +348,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(1176, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 16);
@@ -325,7 +359,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
@@ -379,6 +413,8 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-
+        private System.Windows.Forms.ToolStripMenuItem مدیریتکاربرانToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem تستسرچکتابToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem مدیریتکتابهاToolStripMenuItem1;
     }
 }

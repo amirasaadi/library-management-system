@@ -13,7 +13,7 @@ namespace Library
 {
     public partial class admin : Form
     {
-        SqlConnection sqlcon = new SqlConnection("Data Source=DESKTOP-V0Q63QM;Initial Catalog=Library;Integrated Security=True");
+        SqlConnection sqlcon = new SqlConnection("Data Source=DESKTOP-9UL50MI;Initial Catalog=Library;Integrated Security=True");
         public admin()
         {
             InitializeComponent();
@@ -172,8 +172,8 @@ namespace Library
             defaultview();
             dataGridView1.Columns[0].HeaderText = "کد کتاب";
             dataGridView1.Columns[1].HeaderText = "نام کتاب";
-            dataGridView1.Columns[2].HeaderText = "انتشارات";
-            dataGridView1.Columns[3].HeaderText = "موضوع";
+            dataGridView1.Columns[2].HeaderText = "نویسنده";
+            dataGridView1.Columns[3].HeaderText = "عنوان";
             dataGridView1.Columns[4].HeaderText = "مترجم";
             dataGridView1.Columns[5].HeaderText = "انتشارات";
             dataGridView1.Columns[6].HeaderText = "سال انتشار";
@@ -240,6 +240,29 @@ namespace Library
         private void admin_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void مدیریتکاربرانToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            user_management mya = new user_management();
+            mya.ShowDialog();
+        }
+
+        private void تستسرچکتابToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Search_Book a = new Search_Book();
+            a.ShowDialog();
+        }
+
+        private void مدیریتکتابهاToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            book_managment a = new book_managment();
+            a.ShowDialog();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

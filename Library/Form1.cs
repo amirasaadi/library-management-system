@@ -13,7 +13,7 @@ namespace Library
 {
     public partial class Form1 : Form
     {
-        SqlConnection sqlcon = new SqlConnection("Data Source=DESKTOP-V0Q63QM;Initial Catalog=Library;Integrated Security=True");
+        SqlConnection sqlcon = new SqlConnection("Data Source=DESKTOP-9UL50MI;Initial Catalog=Library;Integrated Security=True");
         public Form1()
         {
             InitializeComponent();
@@ -44,11 +44,18 @@ namespace Library
                 MessageBox.Show("نام کاربری یا کلمه عبور اشتباه میباشد","هشدار",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             sqlcon.Close();
+            txtPassword.Text = "";
+            txtUsername.Text = "";
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             SqlConnection sqlcon = new SqlConnection("Data Source=DESKTOP-V0Q63QM;Initial Catalog=Library;Integrated Security=True");
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
 
         }
     }

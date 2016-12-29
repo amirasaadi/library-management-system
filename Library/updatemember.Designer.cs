@@ -198,6 +198,7 @@
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "بروزرسانی";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // updatemember
             // 

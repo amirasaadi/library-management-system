@@ -32,3 +32,6 @@ C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.deleteMember
 C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.Form1.resources
 C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.Properties.Resources.resources
 C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.user_management.resources
+C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.Search_Book.resources
+C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.book_managment.resources

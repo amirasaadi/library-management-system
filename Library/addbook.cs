@@ -12,7 +12,7 @@ namespace Library
 {
     public partial class addbook : Form
     {
-        SqlConnection sqlcon = new SqlConnection("Data Source=DESKTOP-V0Q63QM;Initial Catalog=Library;Integrated Security=True");
+        SqlConnection sqlcon = new SqlConnection("Data Source=DESKTOP-9UL50MI;Initial Catalog=Library;Integrated Security=True");
         public addbook()
         {
             InitializeComponent();

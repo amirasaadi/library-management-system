@@ -63,6 +63,12 @@
     <Compile Include="admin.Designer.cs">
       <DependentUpon>admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="book-managment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="book-managment.Designer.cs">
+      <DependentUpon>book-managment.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,14 +107,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Book.Designer.cs">
+      <DependentUpon>Search_Book.cs</DependentUpon>
+    </Compile>
     <Compile Include="updatemember.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="updatemember.Designer.cs">
       <DependentUpon>updatemember.cs</DependentUpon>
     </Compile>
+    <Compile Include="user-management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user-management.Designer.cs">
+      <DependentUpon>user-management.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addbook.resx">
       <DependentUpon>addbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="book-managment.resx">
+      <DependentUpon>book-managment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="deletebook.resx">
       <DependentUpon>deletebook.cs</DependentUpon>
@@ -119,8 +140,14 @@
     <EmbeddedResource Include="memberlist.resx">
       <DependentUpon>memberlist.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Search_Book.resx">
+      <DependentUpon>Search_Book.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="updatemember.resx">
       <DependentUpon>updatemember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user-management.resx">
+      <DependentUpon>user-management.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
