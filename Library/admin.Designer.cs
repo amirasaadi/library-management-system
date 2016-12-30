@@ -181,7 +181,7 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(1118, 889);
+            this.groupBox1.Size = new System.Drawing.Size(1200, 889);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "جستجوی کتاب";
@@ -206,12 +206,14 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.Olive;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 135);
+            this.dataGridView1.Location = new System.Drawing.Point(86, 112);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Azure;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Size = new System.Drawing.Size(1091, 760);
+            this.dataGridView1.Size = new System.Drawing.Size(1114, 544);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -298,6 +300,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1128, 733);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
