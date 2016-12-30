@@ -35,10 +35,6 @@ namespace Library
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if()
-            {
-
-            }
             if (txtBookcode.Text == "" || txtBookname.Text == "" || txtbookauthor.Text == "" || txtpublisher.Text == "" || txtyear.Text == "" || txtPublish_Number.Text == "" || txtPublish_Number.Text == "")
             {
                 MessageBox.Show("لطفا فیلد های ستاره دار را پر نمایید ");
@@ -76,6 +72,7 @@ namespace Library
                 sqlcon.Close();
             }
             defaultview();
+            clear();
         }
         public void defaultview()
         {
@@ -208,6 +205,75 @@ namespace Library
         private void button2_Click(object sender, EventArgs e)
         {
             clear();
+        }
+
+        private void txtBookcode_TextChanged(object sender, EventArgs e)
+        {
+            int n;
+            lblMsg.Text = "";
+            bool isnumric = int.TryParse(txtBookcode.Text, out n);
+            if(isnumric||txtBookcode.Text=="")
+            {
+                lblMsg.Text = "";
+            }
+            else
+            {
+
+                lblMsg.Text = "کد کتاب نا معتبر است";
+            }
+        }
+
+        private void txtBookname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtyear_TextChanged(object sender, EventArgs e)
+        {
+            int n;
+            lblMsg.Text = "";
+            bool isnumric = int.TryParse(txtyear.Text, out n);
+            if (isnumric || txtyear.Text == "")
+            {
+                lblMsg.Text = "";
+            }
+            else
+            {
+
+                lblMsg.Text = "سال انتشار نا معتبر است";
+            }
+        }
+
+        private void txtshabak_TextChanged(object sender, EventArgs e)
+        {
+            int n;
+            lblMsg.Text = "";
+            bool isnumric = int.TryParse(txtshabak.Text, out n);
+            if (isnumric || txtshabak.Text == "")
+            {
+                lblMsg.Text = "";
+            }
+            else
+            {
+
+                lblMsg.Text = "شابک نا معتبر است";
+            }
+        }
+
+        private void txtPublish_Number_TextChanged(object sender, EventArgs e)
+        {
+            int n;
+            lblMsg.Text = "";
+            bool isnumric = int.TryParse(txtPublish_Number.Text, out n);
+            if (isnumric || txtPublish_Number.Text == "")
+            {
+                lblMsg.Text = "";
+            }
+            else
+            {
+
+                lblMsg.Text = "شماره انتشار نا معتبر است";
+            }
         }
     }
 }

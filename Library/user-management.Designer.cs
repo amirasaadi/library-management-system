@@ -156,6 +156,7 @@
             this.txtPassword.Font = new System.Drawing.Font("IRNazanin", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(330, 387);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(100, 30);
             this.txtPassword.TabIndex = 1;
             // 
@@ -164,6 +165,7 @@
             this.txtPassword2.Font = new System.Drawing.Font("IRNazanin", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword2.Location = new System.Drawing.Point(330, 435);
             this.txtPassword2.Name = "txtPassword2";
+            this.txtPassword2.PasswordChar = '*';
             this.txtPassword2.Size = new System.Drawing.Size(100, 30);
             this.txtPassword2.TabIndex = 1;
             // 

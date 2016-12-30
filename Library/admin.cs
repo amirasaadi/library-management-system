@@ -162,6 +162,7 @@ namespace Library
 
         private void admin_Load(object sender, EventArgs e)
         {
+            groupBox1.Width = this.Width;
             timer1.Start();
            
             lib lib1 = new lib();
@@ -263,6 +264,21 @@ namespace Library
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void admin_Activated(object sender, EventArgs e)
+        {
+            defaultview();
+        }
+
+        private void admin_Deactivate(object sender, EventArgs e)
+        {
+            defaultview();
+        }
+
+        private void admin_EnabledChanged(object sender, EventArgs e)
+        {
+            defaultview();
         }
     }
 }

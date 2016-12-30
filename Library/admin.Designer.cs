@@ -72,8 +72,9 @@
             this.خروجToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 3, 0, 3);
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip1.Size = new System.Drawing.Size(1354, 46);
+            this.menuStrip1.Size = new System.Drawing.Size(1128, 60);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -82,13 +83,13 @@
             this.مدیریتکاربرانToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.مدیریتکاربرانToolStripMenuItem1});
             this.مدیریتکاربرانToolStripMenuItem.Name = "مدیریتکاربرانToolStripMenuItem";
-            this.مدیریتکاربرانToolStripMenuItem.Size = new System.Drawing.Size(93, 42);
+            this.مدیریتکاربرانToolStripMenuItem.Size = new System.Drawing.Size(93, 54);
             this.مدیریتکاربرانToolStripMenuItem.Text = "مدیریت کاربران";
             // 
             // مدیریتکاربرانToolStripMenuItem1
             // 
             this.مدیریتکاربرانToolStripMenuItem1.Name = "مدیریتکاربرانToolStripMenuItem1";
-            this.مدیریتکاربرانToolStripMenuItem1.Size = new System.Drawing.Size(152, 28);
+            this.مدیریتکاربرانToolStripMenuItem1.Size = new System.Drawing.Size(151, 28);
             this.مدیریتکاربرانToolStripMenuItem1.Text = "مدیریت کاربران";
             this.مدیریتکاربرانToolStripMenuItem1.Click += new System.EventHandler(this.مدیریتکاربرانToolStripMenuItem1_Click);
             // 
@@ -99,7 +100,7 @@
             this.تحویلکتابToolStripMenuItem,
             this.لیستکتبامانتدادهشدهToolStripMenuItem});
             this.مدیریتاماناتToolStripMenuItem.Name = "مدیریتاماناتToolStripMenuItem";
-            this.مدیریتاماناتToolStripMenuItem.Size = new System.Drawing.Size(88, 42);
+            this.مدیریتاماناتToolStripMenuItem.Size = new System.Drawing.Size(88, 54);
             this.مدیریتاماناتToolStripMenuItem.Text = "مدیریت امانات";
             // 
             // امانتکتابToolStripMenuItem
@@ -125,7 +126,7 @@
             this.مدیریتکتابهاToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.مدیریتکتابهاToolStripMenuItem1});
             this.مدیریتکتابهاToolStripMenuItem.Name = "مدیریتکتابهاToolStripMenuItem";
-            this.مدیریتکتابهاToolStripMenuItem.Size = new System.Drawing.Size(99, 42);
+            this.مدیریتکتابهاToolStripMenuItem.Size = new System.Drawing.Size(99, 54);
             this.مدیریتکتابهاToolStripMenuItem.Text = "مدیریت کتاب ها";
             // 
             // مدیریتکتابهاToolStripMenuItem1
@@ -141,7 +142,7 @@
             this.راهنماینرمافزارToolStripMenuItem,
             this.دربارهماToolStripMenuItem});
             this.خروجToolStripMenuItem.Name = "خروجToolStripMenuItem";
-            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(52, 42);
+            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(52, 54);
             this.خروجToolStripMenuItem.Text = "راهنما";
             this.خروجToolStripMenuItem.Click += new System.EventHandler(this.خروجToolStripMenuItem_Click);
             // 
@@ -160,7 +161,7 @@
             // خروجToolStripMenuItem1
             // 
             this.خروجToolStripMenuItem1.Name = "خروجToolStripMenuItem1";
-            this.خروجToolStripMenuItem1.Size = new System.Drawing.Size(53, 42);
+            this.خروجToolStripMenuItem1.Size = new System.Drawing.Size(53, 54);
             this.خروجToolStripMenuItem1.Text = "خروج ";
             this.خروجToolStripMenuItem1.Click += new System.EventHandler(this.خروجToolStripMenuItem1_Click);
             // 
@@ -174,11 +175,13 @@
             this.groupBox1.Controls.Add(this.txtSearch);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 49);
+            this.groupBox1.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.groupBox1.Location = new System.Drawing.Point(10, 64);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(1338, 680);
+            this.groupBox1.Size = new System.Drawing.Size(1118, 889);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "جستجوی کتاب";
@@ -188,9 +191,10 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button1.Location = new System.Drawing.Point(563, 49);
+            this.button1.Location = new System.Drawing.Point(469, 64);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 31);
+            this.button1.Size = new System.Drawing.Size(82, 41);
             this.button1.TabIndex = 7;
             this.button1.Text = "بارگزاری مجدد";
             this.button1.UseVisualStyleBackColor = true;
@@ -202,11 +206,12 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.Olive;
-            this.dataGridView1.Location = new System.Drawing.Point(81, 103);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 135);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Azure;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Size = new System.Drawing.Size(1239, 581);
+            this.dataGridView1.Size = new System.Drawing.Size(1091, 760);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -214,9 +219,10 @@
             // 
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnSearch.Location = new System.Drawing.Point(668, 49);
+            this.btnSearch.Location = new System.Drawing.Point(557, 64);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(112, 31);
+            this.btnSearch.Size = new System.Drawing.Size(93, 41);
             this.btnSearch.TabIndex = 5;
             this.btnSearch.Text = "انجام جستجو";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -226,7 +232,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label3.Location = new System.Drawing.Point(1083, 24);
+            this.label3.Location = new System.Drawing.Point(889, 31);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 25);
             this.label3.TabIndex = 4;
@@ -235,16 +242,18 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtSearch.Location = new System.Drawing.Point(786, 54);
+            this.txtSearch.Location = new System.Drawing.Point(655, 71);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(364, 31);
+            this.txtSearch.Size = new System.Drawing.Size(304, 31);
             this.txtSearch.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.Location = new System.Drawing.Point(1245, 27);
+            this.label2.Location = new System.Drawing.Point(1020, 31);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 25);
             this.label2.TabIndex = 2;
@@ -262,9 +271,10 @@
             "سال انتشار",
             "انتشارات",
             "مترجم"});
-            this.comboBox1.Location = new System.Drawing.Point(1158, 54);
+            this.comboBox1.Location = new System.Drawing.Point(965, 71);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(162, 33);
+            this.comboBox1.Size = new System.Drawing.Size(136, 33);
             this.comboBox1.TabIndex = 1;
             // 
             // timer1
@@ -277,30 +287,36 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1176, 9);
+            this.label1.Location = new System.Drawing.Point(980, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 2;
             // 
             // admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1354, 733);
+            this.ClientSize = new System.Drawing.Size(1128, 733);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("IRNazanin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.MaximizeBox = false;
             this.Name = "admin";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "مدیریت سیستم";
+            this.Activated += new System.EventHandler(this.admin_Activated);
+            this.Deactivate += new System.EventHandler(this.admin_Deactivate);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.admin_FormClosed);
             this.Load += new System.EventHandler(this.admin_Load);
+            this.EnabledChanged += new System.EventHandler(this.admin_EnabledChanged);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
