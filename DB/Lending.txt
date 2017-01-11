@@ -1,0 +1,43 @@
+USE [Library]
+GO
+/****** Object:  StoredProcedure [dbo].[Lending]    Script Date: 11/01/2017 8:34:26 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+ALTER PROCEDURE [dbo].[Lending]
+	-- Add the parameters for the stored procedure here
+	@N_Code NVARCHAR(10),
+	@Book_Code INT
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	DECLARE @C INT
+	DECLARE @N NVARCHAR(10)
+	SET @C = (SELECT COUNT(Depositer_National_Code) FROM Deposit WHERE Depositer_National_Code = @N_Code)
+	SET @N = (SELECT Reserver_National_Code FROM Reserv WHERE Book_Code=@Book_Code)
+	IF EXISTS(SELECT Reserver_National_Code FROM Reserv WHERE Book_Code=@Book_Code) AND @N!=@N_Code
+		RETURN 2
+
+	IF @C < 4
+	BEGIN
+		INSERT INTO Deposit(Depositer_National_Code, Book_Code, [Start_Date], End_Date) 
+		VALUES (@N_Code ,@Book_Code , current_timestamp ,DATEADD(week,2,current_timestamp))
+
+		UPDATE Book
+		SET Deposited = 1
+		WHERE Code = @Book_Code
+		
+		RETURN 1
+		-- Insert statements for procedure here
+	END
+	ELSE 
+		RETURN 0
+END

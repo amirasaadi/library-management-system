@@ -1,0 +1,43 @@
+USE [Library]
+GO
+/****** Object:  StoredProcedure [dbo].[Reserv_Book]    Script Date: 11/01/2017 8:35:49 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+ALTER PROCEDURE [dbo].[Reserv_Book]
+	-- Add the parameters for the stored procedure here
+	@N_Code NVARCHAR(10),
+	@Book_Code INT
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	DECLARE @C INT
+	SET @C = (SELECT COUNT(Reserver_National_Code) FROM Reserv WHERE Reserver_National_Code=@N_Code)
+	IF @C < 4
+	BEGIN
+		IF NOT EXISTS(SELECT * FROM Reserv WHERE Book_Code=@Book_Code)
+		BEGIN	 
+			INSERT INTO Reserv(Reserver_National_Code, Book_Code, [Date]) 
+			VALUES (@N_Code,@Book_Code, current_timestamp)
+
+			UPDATE Book
+			SET Reserved = 1
+			WHERE Code = @Book_Code
+
+		RETURN 1
+		END
+		ELSE 
+			RETURN 2 
+		-- Insert statements for procedure here
+	END
+	ELSE 
+		RETURN 0
+END
