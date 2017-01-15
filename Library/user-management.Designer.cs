@@ -32,10 +32,6 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtFamily = new System.Windows.Forms.TextBox();
             this.txtFathername = new System.Windows.Forms.TextBox();
-            this.txtIDKodMeli = new System.Windows.Forms.TextBox();
-            this.txtPostalcodeKodPosti = new System.Windows.Forms.TextBox();
-            this.txtBirthdayTT = new System.Windows.Forms.TextBox();
-            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtIDShomareOzviat = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
@@ -56,9 +52,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtce = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
+            this.txtIDKodMeli = new System.Windows.Forms.MaskedTextBox();
+            this.txtce = new System.Windows.Forms.MaskedTextBox();
+            this.txtPostalcodeKodPost = new System.Windows.Forms.MaskedTextBox();
+            this.txtBirthdayTT = new System.Windows.Forms.MaskedTextBox();
+            this.txtPhoneNumber = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,7 +85,7 @@
             this.txtFamily.Location = new System.Drawing.Point(759, 340);
             this.txtFamily.Name = "txtFamily";
             this.txtFamily.Size = new System.Drawing.Size(100, 30);
-            this.txtFamily.TabIndex = 1;
+            this.txtFamily.TabIndex = 2;
             // 
             // txtFathername
             // 
@@ -93,39 +93,7 @@
             this.txtFathername.Location = new System.Drawing.Point(759, 387);
             this.txtFathername.Name = "txtFathername";
             this.txtFathername.Size = new System.Drawing.Size(100, 30);
-            this.txtFathername.TabIndex = 1;
-            // 
-            // txtIDKodMeli
-            // 
-            this.txtIDKodMeli.Font = new System.Drawing.Font("IRNazanin", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDKodMeli.Location = new System.Drawing.Point(759, 435);
-            this.txtIDKodMeli.Name = "txtIDKodMeli";
-            this.txtIDKodMeli.Size = new System.Drawing.Size(100, 30);
-            this.txtIDKodMeli.TabIndex = 1;
-            // 
-            // txtPostalcodeKodPosti
-            // 
-            this.txtPostalcodeKodPosti.Font = new System.Drawing.Font("IRNazanin", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPostalcodeKodPosti.Location = new System.Drawing.Point(560, 292);
-            this.txtPostalcodeKodPosti.Name = "txtPostalcodeKodPosti";
-            this.txtPostalcodeKodPosti.Size = new System.Drawing.Size(100, 30);
-            this.txtPostalcodeKodPosti.TabIndex = 1;
-            // 
-            // txtBirthdayTT
-            // 
-            this.txtBirthdayTT.Font = new System.Drawing.Font("IRNazanin", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBirthdayTT.Location = new System.Drawing.Point(560, 340);
-            this.txtBirthdayTT.Name = "txtBirthdayTT";
-            this.txtBirthdayTT.Size = new System.Drawing.Size(100, 30);
-            this.txtBirthdayTT.TabIndex = 1;
-            // 
-            // txtPhoneNumber
-            // 
-            this.txtPhoneNumber.Font = new System.Drawing.Font("IRNazanin", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhoneNumber.Location = new System.Drawing.Point(560, 387);
-            this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(100, 30);
-            this.txtPhoneNumber.TabIndex = 1;
+            this.txtFathername.TabIndex = 3;
             // 
             // txtAddress
             // 
@@ -133,7 +101,7 @@
             this.txtAddress.Location = new System.Drawing.Point(560, 435);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(100, 30);
-            this.txtAddress.TabIndex = 1;
+            this.txtAddress.TabIndex = 9;
             // 
             // txtIDShomareOzviat
             // 
@@ -141,7 +109,7 @@
             this.txtIDShomareOzviat.Location = new System.Drawing.Point(330, 292);
             this.txtIDShomareOzviat.Name = "txtIDShomareOzviat";
             this.txtIDShomareOzviat.Size = new System.Drawing.Size(100, 30);
-            this.txtIDShomareOzviat.TabIndex = 1;
+            this.txtIDShomareOzviat.TabIndex = 10;
             // 
             // txtUserName
             // 
@@ -149,7 +117,7 @@
             this.txtUserName.Location = new System.Drawing.Point(330, 336);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(100, 30);
-            this.txtUserName.TabIndex = 1;
+            this.txtUserName.TabIndex = 11;
             // 
             // txtPassword
             // 
@@ -158,7 +126,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(100, 30);
-            this.txtPassword.TabIndex = 1;
+            this.txtPassword.TabIndex = 12;
             // 
             // txtPassword2
             // 
@@ -167,37 +135,40 @@
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.PasswordChar = '*';
             this.txtPassword2.Size = new System.Drawing.Size(100, 30);
-            this.txtPassword2.TabIndex = 1;
+            this.txtPassword2.TabIndex = 13;
             // 
             // btnCreate
             // 
+            this.btnCreate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCreate.Font = new System.Drawing.Font("IRNazanin", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.Location = new System.Drawing.Point(105, 315);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(100, 31);
-            this.btnCreate.TabIndex = 2;
+            this.btnCreate.TabIndex = 14;
             this.btnCreate.Text = "ثبت کاربر";
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // btnDelete
             // 
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Font = new System.Drawing.Font("IRNazanin", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(105, 364);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(100, 31);
-            this.btnDelete.TabIndex = 2;
+            this.btnDelete.TabIndex = 15;
             this.btnDelete.Text = "حذف";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Font = new System.Drawing.Font("IRNazanin", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Location = new System.Drawing.Point(105, 413);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(100, 31);
-            this.btnUpdate.TabIndex = 2;
+            this.btnUpdate.TabIndex = 16;
             this.btnUpdate.Text = "بروزرسانی";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -322,14 +293,6 @@
             this.label12.TabIndex = 14;
             this.label12.Text = "تکرار کلمه عبور";
             // 
-            // txtce
-            // 
-            this.txtce.Font = new System.Drawing.Font("IRNazanin", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtce.Location = new System.Drawing.Point(759, 488);
-            this.txtce.Name = "txtce";
-            this.txtce.Size = new System.Drawing.Size(100, 30);
-            this.txtce.TabIndex = 1;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -342,14 +305,55 @@
             // 
             // btnClear
             // 
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClear.Font = new System.Drawing.Font("IRNazanin", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.Location = new System.Drawing.Point(105, 459);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(100, 31);
-            this.btnClear.TabIndex = 15;
+            this.btnClear.TabIndex = 17;
             this.btnClear.Text = "پاک کردن";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // txtIDKodMeli
+            // 
+            this.txtIDKodMeli.Location = new System.Drawing.Point(759, 439);
+            this.txtIDKodMeli.Mask = "0000000000";
+            this.txtIDKodMeli.Name = "txtIDKodMeli";
+            this.txtIDKodMeli.Size = new System.Drawing.Size(100, 20);
+            this.txtIDKodMeli.TabIndex = 4;
+            // 
+            // txtce
+            // 
+            this.txtce.Location = new System.Drawing.Point(759, 489);
+            this.txtce.Mask = "0000000000";
+            this.txtce.Name = "txtce";
+            this.txtce.Size = new System.Drawing.Size(100, 20);
+            this.txtce.TabIndex = 5;
+            // 
+            // txtPostalcodeKodPost
+            // 
+            this.txtPostalcodeKodPost.Location = new System.Drawing.Point(560, 298);
+            this.txtPostalcodeKodPost.Mask = "0000000000";
+            this.txtPostalcodeKodPost.Name = "txtPostalcodeKodPost";
+            this.txtPostalcodeKodPost.Size = new System.Drawing.Size(100, 20);
+            this.txtPostalcodeKodPost.TabIndex = 6;
+            // 
+            // txtBirthdayTT
+            // 
+            this.txtBirthdayTT.Location = new System.Drawing.Point(560, 348);
+            this.txtBirthdayTT.Mask = "0000";
+            this.txtBirthdayTT.Name = "txtBirthdayTT";
+            this.txtBirthdayTT.Size = new System.Drawing.Size(100, 20);
+            this.txtBirthdayTT.TabIndex = 7;
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.Location = new System.Drawing.Point(560, 391);
+            this.txtPhoneNumber.Mask = "0000000000";
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtPhoneNumber.TabIndex = 8;
             // 
             // user_management
             // 
@@ -357,6 +361,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1000, 532);
+            this.Controls.Add(this.txtPhoneNumber);
+            this.Controls.Add(this.txtBirthdayTT);
+            this.Controls.Add(this.txtPostalcodeKodPost);
+            this.Controls.Add(this.txtce);
+            this.Controls.Add(this.txtIDKodMeli);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -376,15 +385,10 @@
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.txtPassword2);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtBirthdayTT);
             this.Controls.Add(this.txtUserName);
-            this.Controls.Add(this.txtPostalcodeKodPosti);
-            this.Controls.Add(this.txtce);
             this.Controls.Add(this.txtIDShomareOzviat);
-            this.Controls.Add(this.txtIDKodMeli);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtFathername);
-            this.Controls.Add(this.txtPhoneNumber);
             this.Controls.Add(this.txtFamily);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.dataGridView1);
@@ -404,10 +408,6 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtFamily;
         private System.Windows.Forms.TextBox txtFathername;
-        private System.Windows.Forms.TextBox txtIDKodMeli;
-        private System.Windows.Forms.TextBox txtPostalcodeKodPosti;
-        private System.Windows.Forms.TextBox txtBirthdayTT;
-        private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtIDShomareOzviat;
         private System.Windows.Forms.TextBox txtUserName;
@@ -428,8 +428,12 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtce;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.MaskedTextBox txtIDKodMeli;
+        private System.Windows.Forms.MaskedTextBox txtce;
+        private System.Windows.Forms.MaskedTextBox txtPostalcodeKodPost;
+        private System.Windows.Forms.MaskedTextBox txtBirthdayTT;
+        private System.Windows.Forms.MaskedTextBox txtPhoneNumber;
     }
 }

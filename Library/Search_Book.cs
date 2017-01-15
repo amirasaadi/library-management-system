@@ -84,5 +84,10 @@ namespace Library
         {
 
         }
+
+        private void Search_Book_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

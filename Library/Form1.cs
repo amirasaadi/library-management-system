@@ -33,15 +33,23 @@ namespace Library
             sqlcmd.Parameters.Add("@r", SqlDbType.Int).Direction = ParameterDirection.ReturnValue;
             sqlcon.Open();
             sqlcmd.ExecuteNonQuery();
-            if (sqlcmd.Parameters["@r"].Value.ToString() == "1")
+            string id = sqlcmd.Parameters["@r"].Value.ToString();
+            if (id == "1")
             {
                 admin mya = new admin();
                 mya.Show();
                 this.Hide();
             }
-            else
+            else if(id == "0")
             {
                 MessageBox.Show("نام کاربری یا کلمه عبور اشتباه میباشد","هشدار",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Members mym = new Members();
+                mym.ID = id;
+                mym.Show();
+                this.Hide();
             }
             sqlcon.Close();
             txtPassword.Text = "";

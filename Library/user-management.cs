@@ -160,11 +160,12 @@ namespace Library
                 sqlcmd.Parameters.Add("@r", SqlDbType.Int).Direction = ParameterDirection.ReturnValue;
                 sqlcmd.Parameters.Add("@UserName", SqlDbType.NVarChar, 15).Value = txtUserName.Text;
                 sqlcmd.Parameters.Add("@PassWord", SqlDbType.NVarChar, 15).Value = txtPassword.Text;
+
                 sqlcon.Open();
                 sqlcmd.ExecuteNonQuery();
                 if (sqlcmd.Parameters["@r"].Value.ToString() == "1")
                 {
-                    MessageBox.Show("با موفیت بروز شد");
+                    MessageBox.Show("با موفیت درج شد");
 
                 }
                 else

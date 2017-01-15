@@ -52,7 +52,7 @@
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnEnter.Size = new System.Drawing.Size(78, 35);
-            this.btnEnter.TabIndex = 0;
+            this.btnEnter.TabIndex = 2;
             this.btnEnter.Text = "ورود";
             this.btnEnter.UseVisualStyleBackColor = true;
             this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
@@ -84,7 +84,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtUsername.Size = new System.Drawing.Size(124, 31);
-            this.txtUsername.TabIndex = 3;
+            this.txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
@@ -94,7 +94,7 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtPassword.Size = new System.Drawing.Size(124, 31);
-            this.txtPassword.TabIndex = 4;
+            this.txtPassword.TabIndex = 1;
             // 
             // bindingSource1
             // 

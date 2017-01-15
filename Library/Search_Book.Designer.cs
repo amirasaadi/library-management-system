@@ -48,10 +48,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(785, 12);
+            this.button1.Location = new System.Drawing.Point(682, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 7;
             this.button1.Text = "جستجو";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -69,35 +69,35 @@
             this.textauthor.Location = new System.Drawing.Point(657, 75);
             this.textauthor.Name = "textauthor";
             this.textauthor.Size = new System.Drawing.Size(130, 20);
-            this.textauthor.TabIndex = 1;
+            this.textauthor.TabIndex = 2;
             // 
             // textcode
             // 
             this.textcode.Location = new System.Drawing.Point(657, 101);
             this.textcode.Name = "textcode";
             this.textcode.Size = new System.Drawing.Size(130, 20);
-            this.textcode.TabIndex = 1;
+            this.textcode.TabIndex = 3;
             // 
             // textyear
             // 
             this.textyear.Location = new System.Drawing.Point(657, 127);
             this.textyear.Name = "textyear";
             this.textyear.Size = new System.Drawing.Size(130, 20);
-            this.textyear.TabIndex = 1;
+            this.textyear.TabIndex = 4;
             // 
             // textpub
             // 
             this.textpub.Location = new System.Drawing.Point(657, 153);
             this.textpub.Name = "textpub";
             this.textpub.Size = new System.Drawing.Size(130, 20);
-            this.textpub.TabIndex = 1;
+            this.textpub.TabIndex = 5;
             // 
             // texttra
             // 
             this.texttra.Location = new System.Drawing.Point(657, 176);
             this.texttra.Name = "texttra";
             this.texttra.Size = new System.Drawing.Size(130, 20);
-            this.texttra.TabIndex = 1;
+            this.texttra.TabIndex = 6;
             // 
             // dataGridView1
             // 
@@ -198,6 +198,7 @@
             this.Name = "Search_Book";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "Search_Book";
+            this.Load += new System.EventHandler(this.Search_Book_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

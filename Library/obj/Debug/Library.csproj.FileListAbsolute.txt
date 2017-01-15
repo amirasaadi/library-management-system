@@ -35,3 +35,6 @@ C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.csproj.Gener
 C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.user_management.resources
 C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.Search_Book.resources
 C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.book_managment.resources
+C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.lending_managment.resources
+C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.Members.resources
+C:\Users\Amir\Desktop\se2\Library\Library\Library\obj\Debug\Library.Member_Reserv.resources

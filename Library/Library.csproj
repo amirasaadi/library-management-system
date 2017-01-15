@@ -69,6 +69,7 @@
     <Compile Include="book-managment.Designer.cs">
       <DependentUpon>book-managment.cs</DependentUpon>
     </Compile>
+    <Compile Include="book.cs" />
     <Compile Include="DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -98,12 +99,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="lending-managment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lending-managment.Designer.cs">
+      <DependentUpon>lending-managment.cs</DependentUpon>
+    </Compile>
     <Compile Include="lib.cs" />
     <Compile Include="memberlist.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="memberlist.Designer.cs">
       <DependentUpon>memberlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members.Designer.cs">
+      <DependentUpon>Members.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member_Reserv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_Reserv.Designer.cs">
+      <DependentUpon>Member_Reserv.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -137,8 +156,17 @@
     <EmbeddedResource Include="editbook.resx">
       <DependentUpon>editbook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="lending-managment.resx">
+      <DependentUpon>lending-managment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="memberlist.resx">
       <DependentUpon>memberlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members.resx">
+      <DependentUpon>Members.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_Reserv.resx">
+      <DependentUpon>Member_Reserv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Search_Book.resx">
       <DependentUpon>Search_Book.cs</DependentUpon>
@@ -149,6 +177,7 @@
     <EmbeddedResource Include="user-management.resx">
       <DependentUpon>user-management.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </None>

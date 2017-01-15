@@ -56,7 +56,7 @@
             this.btnAdd.Location = new System.Drawing.Point(12, 274);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 23;
+            this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "پایان ویرایش";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
@@ -65,63 +65,63 @@
             this.textBox8.Location = new System.Drawing.Point(109, 210);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 21;
+            this.textBox8.TabIndex = 6;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(109, 78);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 20;
+            this.textBox4.TabIndex = 2;
             // 
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(109, 243);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 19;
+            this.textBox10.TabIndex = 7;
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(109, 144);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 18;
+            this.textBox7.TabIndex = 4;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(109, 12);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 17;
+            this.textBox2.TabIndex = 0;
             // 
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(109, 276);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 16;
+            this.textBox9.TabIndex = 8;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(109, 177);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 15;
+            this.textBox6.TabIndex = 5;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(109, 45);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 14;
+            this.textBox3.TabIndex = 1;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(109, 111);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 22;
+            this.textBox5.TabIndex = 3;
             // 
             // textBox1
             // 

@@ -83,35 +83,36 @@
             this.txtAddress.Location = new System.Drawing.Point(42, 175);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(100, 20);
-            this.txtAddress.TabIndex = 21;
+            this.txtAddress.TabIndex = 7;
             // 
             // txtBorn
             // 
             this.txtBorn.Location = new System.Drawing.Point(42, 125);
             this.txtBorn.Name = "txtBorn";
             this.txtBorn.Size = new System.Drawing.Size(100, 20);
-            this.txtBorn.TabIndex = 20;
+            this.txtBorn.TabIndex = 5;
             // 
             // txtPhoneNumber
             // 
             this.txtPhoneNumber.Location = new System.Drawing.Point(42, 150);
+            this.txtPhoneNumber.MaxLength = 10;
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(100, 20);
-            this.txtPhoneNumber.TabIndex = 19;
+            this.txtPhoneNumber.TabIndex = 6;
             // 
             // txtPostalCode
             // 
             this.txtPostalCode.Location = new System.Drawing.Point(42, 100);
             this.txtPostalCode.Name = "txtPostalCode";
             this.txtPostalCode.Size = new System.Drawing.Size(100, 20);
-            this.txtPostalCode.TabIndex = 18;
+            this.txtPostalCode.TabIndex = 4;
             // 
             // txtFatherName
             // 
             this.txtFatherName.Location = new System.Drawing.Point(42, 75);
             this.txtFatherName.Name = "txtFatherName";
             this.txtFatherName.Size = new System.Drawing.Size(100, 20);
-            this.txtFatherName.TabIndex = 22;
+            this.txtFatherName.TabIndex = 3;
             // 
             // label7
             // 
@@ -163,14 +164,14 @@
             this.txtLastname.Location = new System.Drawing.Point(42, 50);
             this.txtLastname.Name = "txtLastname";
             this.txtLastname.Size = new System.Drawing.Size(100, 20);
-            this.txtLastname.TabIndex = 12;
+            this.txtLastname.TabIndex = 2;
             // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(42, 25);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
-            this.txtName.TabIndex = 11;
+            this.txtName.TabIndex = 1;
             // 
             // label3
             // 

@@ -43,7 +43,6 @@
             this.txtpublisher = new System.Windows.Forms.TextBox();
             this.txtBookname = new System.Windows.Forms.TextBox();
             this.txtPublish_Number = new System.Windows.Forms.TextBox();
-            this.txtyear = new System.Windows.Forms.TextBox();
             this.txtbookauthor = new System.Windows.Forms.TextBox();
             this.txtbooktranslater = new System.Windows.Forms.TextBox();
             this.txtBookcode = new System.Windows.Forms.TextBox();
@@ -61,6 +60,7 @@
             this.updatebook = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.lblMsg = new System.Windows.Forms.Label();
+            this.txtyear = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,7 +158,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnAdd.Size = new System.Drawing.Size(100, 31);
-            this.btnAdd.TabIndex = 22;
+            this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "ثبت کتاب";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -170,7 +170,7 @@
             this.txtshabak.Name = "txtshabak";
             this.txtshabak.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtshabak.Size = new System.Drawing.Size(100, 31);
-            this.txtshabak.TabIndex = 30;
+            this.txtshabak.TabIndex = 7;
             this.txtshabak.TextChanged += new System.EventHandler(this.txtshabak_TextChanged);
             // 
             // txtbooktitle
@@ -180,7 +180,7 @@
             this.txtbooktitle.Name = "txtbooktitle";
             this.txtbooktitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtbooktitle.Size = new System.Drawing.Size(100, 31);
-            this.txtbooktitle.TabIndex = 25;
+            this.txtbooktitle.TabIndex = 3;
             // 
             // txtbookcategory
             // 
@@ -189,7 +189,7 @@
             this.txtbookcategory.Name = "txtbookcategory";
             this.txtbookcategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtbookcategory.Size = new System.Drawing.Size(100, 31);
-            this.txtbookcategory.TabIndex = 37;
+            this.txtbookcategory.TabIndex = 8;
             // 
             // txtpublisher
             // 
@@ -198,7 +198,7 @@
             this.txtpublisher.Name = "txtpublisher";
             this.txtpublisher.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtpublisher.Size = new System.Drawing.Size(100, 31);
-            this.txtpublisher.TabIndex = 27;
+            this.txtpublisher.TabIndex = 5;
             // 
             // txtBookname
             // 
@@ -207,7 +207,7 @@
             this.txtBookname.Name = "txtBookname";
             this.txtBookname.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBookname.Size = new System.Drawing.Size(100, 31);
-            this.txtBookname.TabIndex = 23;
+            this.txtBookname.TabIndex = 1;
             this.txtBookname.TextChanged += new System.EventHandler(this.txtBookname_TextChanged);
             // 
             // txtPublish_Number
@@ -217,18 +217,8 @@
             this.txtPublish_Number.Name = "txtPublish_Number";
             this.txtPublish_Number.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtPublish_Number.Size = new System.Drawing.Size(100, 31);
-            this.txtPublish_Number.TabIndex = 38;
+            this.txtPublish_Number.TabIndex = 9;
             this.txtPublish_Number.TextChanged += new System.EventHandler(this.txtPublish_Number_TextChanged);
-            // 
-            // txtyear
-            // 
-            this.txtyear.Font = new System.Drawing.Font("IRNazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtyear.Location = new System.Drawing.Point(745, 240);
-            this.txtyear.Name = "txtyear";
-            this.txtyear.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtyear.Size = new System.Drawing.Size(100, 31);
-            this.txtyear.TabIndex = 28;
-            this.txtyear.TextChanged += new System.EventHandler(this.txtyear_TextChanged);
             // 
             // txtbookauthor
             // 
@@ -237,7 +227,7 @@
             this.txtbookauthor.Name = "txtbookauthor";
             this.txtbookauthor.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtbookauthor.Size = new System.Drawing.Size(100, 31);
-            this.txtbookauthor.TabIndex = 24;
+            this.txtbookauthor.TabIndex = 2;
             // 
             // txtbooktranslater
             // 
@@ -246,7 +236,7 @@
             this.txtbooktranslater.Name = "txtbooktranslater";
             this.txtbooktranslater.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtbooktranslater.Size = new System.Drawing.Size(100, 31);
-            this.txtbooktranslater.TabIndex = 26;
+            this.txtbooktranslater.TabIndex = 4;
             // 
             // txtBookcode
             // 
@@ -255,7 +245,7 @@
             this.txtBookcode.Name = "txtBookcode";
             this.txtBookcode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBookcode.Size = new System.Drawing.Size(100, 31);
-            this.txtBookcode.TabIndex = 21;
+            this.txtBookcode.TabIndex = 0;
             this.txtBookcode.TextChanged += new System.EventHandler(this.txtBookcode_TextChanged);
             // 
             // label8
@@ -377,7 +367,7 @@
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button1.Size = new System.Drawing.Size(100, 30);
-            this.button1.TabIndex = 39;
+            this.button1.TabIndex = 12;
             this.button1.Text = "حذف کتاب";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -389,7 +379,7 @@
             this.updatebook.Name = "updatebook";
             this.updatebook.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.updatebook.Size = new System.Drawing.Size(100, 31);
-            this.updatebook.TabIndex = 40;
+            this.updatebook.TabIndex = 11;
             this.updatebook.Text = "بروزرسانی";
             this.updatebook.UseVisualStyleBackColor = true;
             this.updatebook.Click += new System.EventHandler(this.updatebook_Click);
@@ -401,7 +391,7 @@
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button2.Size = new System.Drawing.Size(100, 31);
-            this.button2.TabIndex = 41;
+            this.button2.TabIndex = 13;
             this.button2.Text = "پاک کردن";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -416,12 +406,21 @@
             this.lblMsg.Size = new System.Drawing.Size(0, 25);
             this.lblMsg.TabIndex = 42;
             // 
+            // txtyear
+            // 
+            this.txtyear.Location = new System.Drawing.Point(745, 243);
+            this.txtyear.Mask = "0000";
+            this.txtyear.Name = "txtyear";
+            this.txtyear.Size = new System.Drawing.Size(100, 20);
+            this.txtyear.TabIndex = 6;
+            // 
             // book_managment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(939, 519);
+            this.Controls.Add(this.txtyear);
             this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.updatebook);
@@ -440,7 +439,6 @@
             this.Controls.Add(this.txtpublisher);
             this.Controls.Add(this.txtBookname);
             this.Controls.Add(this.txtPublish_Number);
-            this.Controls.Add(this.txtyear);
             this.Controls.Add(this.txtbookauthor);
             this.Controls.Add(this.txtbooktranslater);
             this.Controls.Add(this.txtBookcode);
@@ -483,7 +481,6 @@
         private System.Windows.Forms.TextBox txtpublisher;
         private System.Windows.Forms.TextBox txtBookname;
         private System.Windows.Forms.TextBox txtPublish_Number;
-        private System.Windows.Forms.TextBox txtyear;
         private System.Windows.Forms.TextBox txtbookauthor;
         private System.Windows.Forms.TextBox txtbooktranslater;
         private System.Windows.Forms.TextBox txtBookcode;
@@ -501,5 +498,6 @@
         private System.Windows.Forms.Button updatebook;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblMsg;
+        private System.Windows.Forms.MaskedTextBox txtyear;
     }
 }
