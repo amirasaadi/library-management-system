@@ -1,0 +1,44 @@
+-- ================================================
+-- Template generated from Template Explorer using:
+-- Create Procedure (New Menu).SQL
+--
+-- Use the Specify Values for Template Parameters 
+-- command (Ctrl-Shift-M) to fill in the parameter 
+-- values below.
+--
+-- This block of comments will not be included in
+-- the definition of the procedure.
+-- ================================================
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+ALTER PROCEDURE Change_User_Pass
+	-- Add the parameters for the stored procedure here
+	@ID NVARCHAR(10),
+	@UserName NVARCHAR (15),
+	@Old_PassWord NVARCHAR (15),
+	@PassWord NVARCHAR (15)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	IF (@Old_PassWord = (SELECT [PassWord] FROM User1 WHERE UserID=@ID))
+		BEGIN
+			UPDATE User1
+			SET UserName=@UserName,[PassWord]=@PassWord
+			WHERE UserID=@ID
+			RETURN 1
+		END	
+	ELSE
+		RETURN 0
+END
+GO
