@@ -1,0 +1,35 @@
+USE [Library]
+GO
+/****** Object:  StoredProcedure [dbo].[Extend]    Script Date: 16/01/2017 6:45:55 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+ALTER PROCEDURE [dbo].[Extend]
+	-- Add the parameters for the stored procedure here
+	@N_Code NVARCHAR(10),
+	@Book_Code INT
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	IF NOT EXISTS(SELECT * FROM Reserv WHERE Book_Code=@Book_Code)
+		BEGIN
+		UPDATE Deposit 
+		SET End_Date= DATEADD(week,2,current_timestamp)
+		WHERE Book_Code=@Book_Code
+		RETURN 1
+		-- tamdid anjam shod
+		END
+	ELSE 
+		RETURN 0
+		-- ketab reserv shode ast
+END
